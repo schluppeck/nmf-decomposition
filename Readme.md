@@ -4,6 +4,8 @@ Denis Schluppeck, July 2024
 
 ## Non-negative matrix factorisation
 
+![face images, cropped](./face-images.png)
+
 - [famous paper by Lee & Seung](https://www.nature.com/articles/44565) in Nature that kick-started a lot of interest.
 
 - there is whole field / many different algorithms, elaborations, etc.
@@ -18,3 +20,28 @@ curl http://vis-www.cs.umass.edu/lfw/lfw-deepfunneled.tgz > lfw-deep.tgz
 # unpack
 tar xvfz lfw-deepfunneled.tgz
 ```
+
+## To run the code
+
+- make sure `julia` is installer. You can use `juliaup` which works really well: <https://github.com/JuliaLang/juliaup>
+
+```bash
+git clone https://github.com/schluppeck/nmf-decomposition.git
+cd nmf-decomposition.git
+```
+
+then in `julia`
+
+```julia
+# julia>
+] activate .
+# to make sure packages are downloaded you probably have to 
+# (nmf-decomposition) pkg> 
+instantiate
+```
+
+I use the `julia` extension in `vscode`:
+
+<https://www.julia-vscode.org/docs/dev/gettingstarted/>
+
+Now look at `test-nmf.jl`
